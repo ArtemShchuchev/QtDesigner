@@ -30,10 +30,10 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
-         <widget class="QSpinBox" name="spinBox_value"/>
+         <widget class="QSpinBox" name="sb_value"/>
         </item>
         <item>
-         <widget class="QPushButton" name="input_btn">
+         <widget class="QPushButton" name="pb_inpu">
           <property name="text">
            <string>Ввод -&gt;</string>
           </property>
@@ -66,10 +66,10 @@
        </widget>
       </item>
       <item>
-       <widget class="QTextBrowser" name="textBrowser"/>
+       <widget class="QTextBrowser" name="txtB_result"/>
       </item>
       <item>
-       <widget class="QPushButton" name="clear_btn">
+       <widget class="QPushButton" name="pb_clear">
         <property name="text">
          <string>Очистить</string>
         </property>
@@ -119,17 +119,17 @@
  </widget>
  <tabstops>
   <tabstop>lineEdit</tabstop>
-  <tabstop>spinBox_value</tabstop>
-  <tabstop>input_btn</tabstop>
-  <tabstop>clear_btn</tabstop>
-  <tabstop>textBrowser</tabstop>
+  <tabstop>sb_value</tabstop>
+  <tabstop>pb_inpu</tabstop>
+  <tabstop>pb_clear</tabstop>
+  <tabstop>txtB_result</tabstop>
  </tabstops>
  <resources/>
  <connections>
   <connection>
-   <sender>clear_btn</sender>
+   <sender>pb_clear</sender>
    <signal>clicked()</signal>
-   <receiver>textBrowser</receiver>
+   <receiver>txtB_result</receiver>
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
